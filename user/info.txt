@@ -1,6 +1,6 @@
 git repo:
 
-https://github.com/sergeybabann/spa_vite_vanilla.js_v.3.original.babann
+https://github.com/sergeybabann/spa_vite_vanilla.js-original.babann
 
 
 stop: 

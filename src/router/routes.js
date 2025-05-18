@@ -26,6 +26,28 @@ const routes = {
 
   '/theory/theme_02/lesson_03': () =>
     import('../pages/theory/02_theme/03_lesson.js'),
+
+  /*---------- 03 THEME ----------*/
+  '/theory/theme_03': () => import('../pages/theory/theory__theme_03.js'),
+
+  /*---------- LESSONS ----------*/
+  '/theory/theme_03/lesson_01': () =>
+    import('../pages/theory/03_theme/01_lesson.js'),
+
+  '/theory/theme_03/lesson_02': () =>
+    import('../pages/theory/03_theme/02_lesson.js'),
+
+  '/theory/theme_03/lesson_03': () =>
+    import('../pages/theory/03_theme/03_lesson.js'),
+
+  '/theory/theme_03/lesson_04': () =>
+    import('../pages/theory/03_theme/04_lesson.js'),
+
+  '/theory/theme_03/lesson_05': () =>
+    import('../pages/theory/03_theme/05_lesson.js'),
+
+  '/theory/theme_03/lesson_06': () =>
+    import('../pages/theory/03_theme/06_lesson.js'),
 }
 
 const loadRoute = async (path) => {

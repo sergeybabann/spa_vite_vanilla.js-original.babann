@@ -1,0 +1,184 @@
+<!----- Header content ----->
+<div class="header2__content">
+    <div class="header2__wrapper-1">
+        <!----- Bread Crumbs ----->
+        <div class="header2__bread-crumbs">
+            <a href="/theory" class="back-link main__link-default">Теория</a>
+            <a href="/theory/theme_03" class="back-link main__link-default">03 Переменные и типы</a>
+        </div><!--bread-crumbs-->
+
+    </div><!--header__wrapper-1-->
+</div><!--header content -->
+
+<!----- MAIN ----->
+<div class="margin__main">
+    <div class="main">
+        <div class="main__wrapper-1">
+            <h1 class="main__title-1">Урок 2. Объявление переменных</h1>
+            <p>
+                В JavaScript есть 3 ключевых слова с помощью которых объявляются переменные:
+            </p>
+            <ul>
+                <li>var</li>
+                <li>let</li>
+                <li>const</li>
+            </ul>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                let a // Объявление переменной с названием a
+                </code>
+            </pre>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                кодconst с = 10 // Объявление переменой с и присваивание ей значения 10
+                </code>
+            </pre>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                a = true // Присваивание значения переменной
+                </code>
+            </pre>
+
+
+            <p>
+                Переменной типа <span class="text__accent-padding">let</span> можно присваивать новые значения,
+                чего нельзя делать для переменной типа <span class="text__accent-padding">const</span>.
+                Переменной типа <span class="text__accent-padding">const</span> должно быть присвоено значение сразу же
+                при ее объявлении:
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                const c = 10
+                </code>
+            </pre>
+
+            <p>
+                Переприсваивание значения переменной:
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+            let a = 10 // объявление переменной a  и присваивание ей значения 10
+            a = 20 /* присваивание нового значения переменной a, которая была объявлена ранее
+            (новое значение число 20) */
+                </code>
+            </pre>
+
+            <p>
+                Объявление переменной, и присваивание ей значение позже:
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                let b // объявление переменной b
+                b = false // присваивание переменной b значения false 
+                </code>
+            </pre>
+
+            <p>
+                Присваивание значения переменной происходит не сразу, а позже. Значение переменной
+                <span class="text__accent-padding">b</span> будет <span class="text__accent-padding">undefined</span>,
+                так как переменная объявлена, но никакого значения ей не присвоено.
+            </p>
+
+            <p>
+                Ошибка переприсваивания значения переменной типа <span class="text__accent-padding">const</span> :
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                const c = 10 // присваивание значения 10 переменной c
+                c = 20 // нельзя менять значение переменной типа const, в консоли будет ошибка
+                </code>
+            </pre>
+
+            <p>
+                Вывод переменной в консоль до ее обявления :
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                console.log(a) /* в консоли будет ошибка с текстом
+                script.js:1 Uncaught ReferenceError: a is not defined */
+                </code>
+            </pre>
+
+            <p>
+                В тексте ошибки говорится о том, что переменная не определена. Мы пытаемся получить доступ к значению
+                переменной, которой не существует. Она не была объявлена ранее. Для того, чтобы была возможность доступа
+                к значению переменной необходимо эту переменную сначала объявить.
+            </p>
+
+            <p>
+                Объявление переменной и вывод ее в консоль :
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                let a // объявление переменной a
+                console.log(a) // вывод переменной a в консоль
+                </code>
+            </pre>
+
+            <p>
+                После объявления переменной <span class="text__accent-padding">a</span>,
+                вызываем <span class="text__accent-padding">log</span> метод объекта
+                <span class="text__accent-padding">console</span> и передаем в качестве аргумента
+                название переменной <span class="text__accent-padding">a</span>, и получаем в результате
+                <span class="text__accent-padding">undefined</span>, потому что значение переменной
+                <span class="text__accent-padding">a</span> после ее объявления будет
+                <span class="text__accent-padding">undefined</span>, так как мы еще не
+                присвоили значение этой переменной.
+            </p>
+
+            <p>
+                Объявление переменной и присвоение ей значения :
+            </p>
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                let a // объявление переменной a
+                a  = true // присвоение переменной a значения true  
+                console.log(a) // значение переменной true
+                </code>
+            </pre>
+
+
+
+
+
+
+            <!---------- DEMO CODE ---------->
+            <pre class="code__example-block">
+                <code>
+                код
+                </code>
+            </pre>
+
+            <!-- 01 RUN CODE -->
+            <div class="run__code-block">
+                <a class="run__code-link" href="/pages/theory/03_theme/02_lesson/01_run_code/index.html" target="_blank"
+                    rel="noopener noreferrer">Запустить код</a>
+                <a class="run__code-link" href="/pages/theory/03_theme/02_lesson/01_run_code.zip" download>скачать
+                    блок кода</a>
+            </div>
+
+
+
+        </div><!--main__wrapper-1-->
+    </div><!--main-->
+</div><!--margin__main-->
